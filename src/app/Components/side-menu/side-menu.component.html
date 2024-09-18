@@ -1,0 +1,25 @@
+<button class="bnt_mn" (click)="alternateVisibility()">Menu</button>
+<section class="sidemenu-cointainer"
+    [style.background-color]="theme"
+    [style.width]="widthMenu + '%' "
+    [style.display]="visibleMenu==true? 'flex':'none' "
+    >
+    <div class="item">
+        <img src="https://icons.iconarchive.com/icons/wackypixel/madagascar/128/Madagascar-Mort-icon.png" alt="image.png">
+        <p>{{username}}</p>
+        <button class="bnt_bc" (click)="alternateVisibility()">Back</button>
+    </div>
+
+    <div class="item">
+        <p><span> 🗓️ </span>Dashboard</p>
+    </div>
+    
+    <div class="item">
+        <p> <span> 🙍 </span>Profile</p>    
+
+     </div>
+    <div class="item">
+        <button class="btn" (click)="setTheme('pink')">Change Color</button>
+        <button class="btn"(click)="setSize()">Change Size</button>
+    </div>
+</section>
